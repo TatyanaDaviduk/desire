@@ -14,9 +14,23 @@ $(function () {
 
     });
 
+    $('.contact-slider').slick({
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        dots: true,
+        arrows: false
+    });
+
+    $('.artical-slider__box').slick({
+        prevArrow: '<button type="button" class="artical-slider__arrow artical-slider__arrowLeft"><img src="images/arrow-slider-left.svg" alt="arrow left"></button>',
+        nextArrow: '<button type="button" class="artical-slider__arrow artical-slider__arrowRight"><img src="images/arrow-slider-right.svg" alt="arrow right"></button>'
+    });
+
     var mixer = mixitup('.gallery__inner',{
         load:{
             filter: '.living'
         }
     });
 })
+
+
